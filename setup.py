@@ -11,7 +11,7 @@ VERSION = "0.0.1"
 
 def get_requirements():
     with open("./requirements.txt") as reqsf:
-        reqs = reqsf.readlines()
+        reqs = reqsf.read().splitlines()
     return reqs
 
 
