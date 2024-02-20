@@ -81,8 +81,8 @@ def make_videodataset(
         batch_size=batch_size,
         drop_last=drop_last,
         pin_memory=pin_mem,
-        num_workers=num_workers,
-        persistent_workers=num_workers > 0)
+        num_workers=0,
+        persistent_workers=False)
     logger.info('VideoDataset unsupervised data loader created')
 
     return dataset, data_loader, dist_sampler
