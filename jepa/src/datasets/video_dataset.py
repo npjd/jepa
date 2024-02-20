@@ -41,7 +41,7 @@ def make_videodataset(
     datasets_weights=None,
     collator=None,
     drop_last=True,
-    num_workers=10,
+    num_workers=0,
     pin_mem=True,
     duration=None,
     log_dir=None,
